@@ -194,7 +194,7 @@ public class ClientLibUseObject implements Use {
      */
     private void includeLibraries(PrintWriter out, LibraryType libraryType) {
         if (htmlLibraryManager != null && libraryType != null && xssAPI != null) { 
-            Collection<ClientLibrary> libs = htmlLibraryManager.getLibraries(categories, libraryType, false, false);
+            Collection<ClientLibrary> libs = htmlLibraryManager.getLibraries(categories, libraryType, false, true);
 
             String attribute = StringUtils.EMPTY;
 
